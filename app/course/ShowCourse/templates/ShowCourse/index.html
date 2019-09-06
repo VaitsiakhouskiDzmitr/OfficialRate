@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
+<html>
+<head>
+<title>Высота и ширина HTML таблицы, пример</title>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="15" width="70%" height="130">
+<tr>
+<td>
+  {% for post in name %}
+    {% if post.Cur_ID == 191 %}
+      <p>{{post.Cur_OfficialRate}}</p>
+    {% endif %}
+  {% endfor %}
+</td>
+<td>ячейка 2, первый ряд</td>
+<td>ячейка 3, первый ряд</td>
+</tr>
+<tr>
+<td>
+  {% for post in name %}
+    {% if post.Cur_ID == 191 %}
+      <p>{{post.Cur_OfficialRate}}</p>
+    {% endif %}
+  {% endfor %}
+</td>
+<td>ячейка 2, второй ряд</td>
+<td>ячейка 3, второй ряд</td>
+</tr>
+</table>
+</body>
+</html>
