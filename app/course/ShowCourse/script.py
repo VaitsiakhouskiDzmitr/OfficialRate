@@ -4,5 +4,5 @@ response = requests.get(url)
 body = response.json()
 price = []
 for i in body:
-    price.append(i)
-print(price[1])
+    price.append(i['Cur_Name'])
+print(price)
